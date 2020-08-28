@@ -6,8 +6,8 @@ class Conversion {
 public:
 	int x, y;
 	Conversion (char a, char b) {
-		this->x = 'a';
-		this->y = 'b';
+		this->x = a;
+		this->y = b;
 	}
 };
 

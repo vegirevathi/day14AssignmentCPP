@@ -25,16 +25,21 @@ public:
 	}
 };
 
-void property(Father *f) {
-	(*f).property();
-}
 
 int main()
 {
-	Son s;
-	Daughter d;
-	property(&s);
-	property(&d);
+	Father father, *obj;
+	Son son;
+	Daughter daughter;
+
+	obj = &father;
+	obj->property();
+
+	obj = &son;
+	obj->property();
+
+	obj = &daughter;
+	obj->property();
 
 	return 0;
 }
